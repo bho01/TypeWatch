@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFF2221D2E2AED8AFB8FAD50 /* Pods_TypeWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC4BB8C3C4FE8D02A82991E0 /* Pods_TypeWatch.framework */; };
 		D92891471FDB96D100F723D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92891461FDB96D100F723D8 /* AppDelegate.swift */; };
 		D92891491FDB96D100F723D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92891481FDB96D100F723D8 /* ViewController.swift */; };
 		D928914C1FDB96D100F723D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D928914A1FDB96D100F723D8 /* Main.storyboard */; };
 		D928914E1FDB96D100F723D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D928914D1FDB96D100F723D8 /* Assets.xcassets */; };
 		D92891511FDB96D100F723D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D928914F1FDB96D100F723D8 /* LaunchScreen.storyboard */; };
+		D92891591FDB96EA00F723D8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92891581FDB96EA00F723D8 /* LoginViewController.swift */; };
+		D9F41B161FE01F7300D7424D /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F41B151FE01F7300D7424D /* SettingsTableViewController.swift */; };
+		D9F41B181FE01F8D00D7424D /* RecentScoresTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F41B171FE01F8D00D7424D /* RecentScoresTableViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490E16424AFCB38C88F52586 /* Pods-TypeWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypeWatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TypeWatch/Pods-TypeWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		AC4BB8C3C4FE8D02A82991E0 /* Pods_TypeWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TypeWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0EEB3B2D462C54A934EC04B /* Pods-TypeWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TypeWatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-TypeWatch/Pods-TypeWatch.release.xcconfig"; sourceTree = "<group>"; };
 		D92891431FDB96D100F723D8 /* TypeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92891461FDB96D100F723D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D92891481FDB96D100F723D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		D928914D1FDB96D100F723D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D92891501FDB96D100F723D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D92891521FDB96D100F723D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92891581FDB96EA00F723D8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D9F41B151FE01F7300D7424D /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		D9F41B171FE01F8D00D7424D /* RecentScoresTableViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentScoresTableViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF2221D2E2AED8AFB8FAD50 /* Pods_TypeWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		737D7035F4FBCD358273324D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC4BB8C3C4FE8D02A82991E0 /* Pods_TypeWatch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D928913A1FDB96D100F723D8 = {
 			isa = PBXGroup;
 			children = (
 				D92891451FDB96D100F723D8 /* TypeWatch */,
 				D92891441FDB96D100F723D8 /* Products */,
+				DE48103087E513A53B2E5DCA /* Pods */,
+				737D7035F4FBCD358273324D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,26 @@
 		D92891451FDB96D100F723D8 /* TypeWatch */ = {
 			isa = PBXGroup;
 			children = (
+				D9F41B171FE01F8D00D7424D /* RecentScoresTableViewCells.swift */,
+				D9F41B151FE01F7300D7424D /* SettingsTableViewController.swift */,
 				D92891461FDB96D100F723D8 /* AppDelegate.swift */,
+				D92891581FDB96EA00F723D8 /* LoginViewController.swift */,
 				D92891481FDB96D100F723D8 /* ViewController.swift */,
 				D928914A1FDB96D100F723D8 /* Main.storyboard */,
-				D928914D1FDB96D100F723D8 /* Assets.xcassets */,
 				D928914F1FDB96D100F723D8 /* LaunchScreen.storyboard */,
+				D928914D1FDB96D100F723D8 /* Assets.xcassets */,
 				D92891521FDB96D100F723D8 /* Info.plist */,
 			);
 			path = TypeWatch;
+			sourceTree = "<group>";
+		};
+		DE48103087E513A53B2E5DCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				490E16424AFCB38C88F52586 /* Pods-TypeWatch.debug.xcconfig */,
+				D0EEB3B2D462C54A934EC04B /* Pods-TypeWatch.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D92891551FDB96D100F723D8 /* Build configuration list for PBXNativeTarget "TypeWatch" */;
 			buildPhases = (
+				BFF9269FD701DC320ACB1D7E /* [CP] Check Pods Manifest.lock */,
 				D928913F1FDB96D100F723D8 /* Sources */,
 				D92891401FDB96D100F723D8 /* Frameworks */,
 				D92891411FDB96D100F723D8 /* Resources */,
+				D2A336D323A20F52299FC628 /* [CP] Embed Pods Frameworks */,
+				435BB7066FB241399542E61F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +167,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		435BB7066FB241399542E61F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypeWatch/Pods-TypeWatch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF9269FD701DC320ACB1D7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TypeWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2A336D323A20F52299FC628 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TypeWatch/Pods-TypeWatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TypeWatch/Pods-TypeWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D928913F1FDB96D100F723D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F41B161FE01F7300D7424D /* SettingsTableViewController.swift in Sources */,
+				D92891591FDB96EA00F723D8 /* LoginViewController.swift in Sources */,
+				D9F41B181FE01F8D00D7424D /* RecentScoresTableViewCells.swift in Sources */,
 				D92891491FDB96D100F723D8 /* ViewController.swift in Sources */,
 				D92891471FDB96D100F723D8 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +371,7 @@
 		};
 		D92891561FDB96D100F723D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490E16424AFCB38C88F52586 /* Pods-TypeWatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +387,7 @@
 		};
 		D92891571FDB96D100F723D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0EEB3B2D462C54A934EC04B /* Pods-TypeWatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

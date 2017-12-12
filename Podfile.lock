@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Floaty (3.0.1)
+  - SwiftyJSON (3.1.4)
+  - TextFieldEffects (1.3.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - Floaty (~> 3.0.0)
+  - SwiftyJSON
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Floaty: bb7a353deee9ddcc14c584ca9c538efdc19669f2
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  TextFieldEffects: 8706f53525f1ce51c8921b7af32237caab50c467
+
+PODFILE CHECKSUM: f98a8e25bade4d5d8818956d3520ed1bffc571f7
+
+COCOAPODS: 1.3.1
